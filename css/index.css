@@ -1,0 +1,205 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	position: relative;
+}
+
+#author {
+	position: fixed;
+	left: 5px;
+	top: 10px;
+	color: white;
+	z-index: 1000;
+}
+#update {
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	color: white;
+	z-index: 1000;
+	padding: 1% 2%;
+	background: transparent;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+#cuerpo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Archivo Narrow', sans-serif;
+	background: linear-gradient(to right, #141E30 , #243B55);
+	color: white;
+}
+
+#header {
+	font-family: 'Acme', sans-serif;
+	text-align: center;
+	background: #DF1A31;
+	color: white;
+	position: fixed;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	line-height: 100px;
+	font-size: 200%;
+	z-index: 100;
+}
+
+#sumWeek {
+	margin-top: 110px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 120%;
+}
+
+#sumWeek p {
+	width: 50%;
+	font-size: 100%;
+}
+
+#days {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-content: center;
+}
+
+#days #load {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	color: black;
+}
+#days #load * {
+	margin: 0 10px;
+}
+
+.dia {
+	display: inline-flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 2pc 0;
+	padding:20px 0;
+	color: white;
+	border-top: 5px solid white;
+}
+.dia a {
+	text-decoration: none;
+	color: white;
+	padding: 1pc 2pc;
+	background: transparent;
+	cursor: pointer;
+	border:2px solid white;
+}
+
+.dia h1 {
+	width: 100%;
+	text-align: center;
+	color: lightseagreen;
+}
+
+.dia > div:not(:nth-of-type(3)) {
+	max-width: 100px;
+	min-width: 150px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.dia div * {
+	margin: 10px 0;
+}
+.dia .horario {
+	font-size: 120%;
+}
+.dia .temperature {
+	position: absolute;
+	top: 15%;
+	display: inline-flex;
+	flex-direction: row;
+	left: 0%;
+	background: 
+}
+
+.dia .temperature span {
+	width: 30px;
+	margin: 0 5px;
+	display: inline-flex;
+}
+
+span.temp {
+	color: #F97704;
+}
+
+span.max {
+	color: red;
+}
+span.min {
+	color: #00FD00;
+}
+
+#box-log {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 500ms ease;
+	background: #201F1F;
+	overflow: visible;
+}
+#box-log * {
+	transition: all 500ms ease;
+	font-family: 'Acme', sans-serif;
+}
+
+#box-log div:nth-of-type(1){
+	border: 1px solid;
+	transform: translate(0,-100%);
+	background: rgba(0,0,0,0.5);
+	padding: 10%;
+	border-radius: 2px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+#box-log div:nth-of-type(1) img{
+	width: 30px;
+	height: 30px;
+	transform: rotate(180deg);
+}
+
+#log {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #33C624;
+}
+
+
+/*Query´s*/
+
+
+@media screen and (max-width: 550px){
+	#header {
+		font-size: 100%;
+	}
+}
