@@ -2,4 +2,4 @@
 
 # I was bored then i begin to work and learn more.
 
-## Note: Android app was done by Cordova Apache.
+## Note: Android app was compiled with Cordova Apache.
